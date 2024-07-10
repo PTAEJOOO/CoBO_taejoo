@@ -4,9 +4,9 @@ from tqdm.auto import tqdm
 
 from torch.nn.utils import clip_grad_norm_
 
-from moses.interfaces import MosesTrainer
-from moses.utils import OneHotVocab, Logger, CircularBuffer
-from moses.vae.misc import CosineAnnealingLRWithRestart, KLAnnealer
+from cobo.utils.mol_utils.moses.interfaces import MosesTrainer
+from cobo.utils.mol_utils.moses.utils import OneHotVocab, Logger, CircularBuffer
+from cobo.utils.mol_utils.moses.vae.misc import CosineAnnealingLRWithRestart, KLAnnealer
 
 class VAETrainer(MosesTrainer):
     def __init__(self, config):

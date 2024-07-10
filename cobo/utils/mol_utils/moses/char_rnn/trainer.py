@@ -5,8 +5,8 @@ import torch.optim as optim
 from tqdm.auto import tqdm
 from torch.nn.utils.rnn import pad_sequence
 
-from moses.interfaces import MosesTrainer
-from moses.utils import CharVocab, Logger
+from cobo.utils.mol_utils.moses.interfaces import MosesTrainer
+from cobo.utils.mol_utils.moses.utils import CharVocab, Logger
 
 
 class CharRNNTrainer(MosesTrainer):
